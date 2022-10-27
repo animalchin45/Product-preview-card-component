@@ -1,0 +1,124 @@
+/* Style Reset */
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/* Typography */
+h2 {
+  color: hsl(212, 21%, 14%);
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 25px 0;
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/* Components */
+.product-card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: flex;
+  min-height: 450px;
+  margin: 50px auto;
+  overflow: hidden;
+  width: 600px;
+}
+
+.product-card__img {
+  background-image: url('../images/image-product-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 50%;
+  overflow: hidden;
+}
+
+.product-card__info {
+  padding: 35px;
+}
+
+.product-card__type {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.product-card__price {
+  align-items: center;
+  display: flex;
+}
+
+.product-card__price--now {
+  color: hsl(158, 36%, 37%);
+  padding-right: 10px;
+}
+
+.product-card__price--was {
+  text-decoration: line-through;
+}
+
+button {
+  align-items: center;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 100%;
+}
+
+button:hover {
+  background-color: hsl(159, 39%, 19%);
+  cursor: pointer;
+}
+
+button > img {
+  padding-right: 10px;
+}
+
+@media (max-width: 375px) {
+  .product-card {
+    flex-direction: column;
+
+    width: 90%;
+  }
+
+  .product-card__img {
+    background-image: url('../images/image-product-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+  }
+
+  .product-card__info {
+    padding: 25px;
+  }
+}
