@@ -52,7 +52,7 @@ button {
 }
 
 .product-card__img {
-  background-image: url('../images/image-product-desktop.jpg');
+  background-image: url('./images/image-product-desktop.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   min-width: 50%;
@@ -111,7 +111,7 @@ button > img {
   }
 
   .product-card__img {
-    background-image: url('../images/image-product-mobile.jpg');
+    background-image: url('./images/image-product-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
