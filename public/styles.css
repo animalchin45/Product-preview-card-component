@@ -23,7 +23,8 @@ body {
 }
 
 /* Typography */
-h1 {
+h1,
+h2 {
   color: hsl(212, 21%, 14%);
   font-family: 'Fraunces', serif;
   font-size: 3.2rem;
